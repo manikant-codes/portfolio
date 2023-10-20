@@ -1,0 +1,48 @@
+.navbar {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 32px;
+  align-items: center;
+  padding: 16px 32px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+  position: sticky;
+}
+
+.navbar > div > a {
+  text-decoration: none;
+  color: #212121;
+  font-size: 1.25rem;
+}
+
+.navbar > div > a:hover {
+  text-decoration: none;
+  color: #5ed3f3;
+}
+
+.linksLeft {
+  display: flex;
+  gap: 16px;
+}
+
+.linksRight {
+  display: flex;
+  gap: 16px;
+}
+
+.name {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.name > a {
+  font-size: 1.75rem !important;
+  color: #212121 !important;
+}
+
+.name > p {
+  font-size: 0.75rem;
+}
