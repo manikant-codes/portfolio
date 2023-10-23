@@ -36,6 +36,11 @@
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+  min-height: 150px;
+  min-width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .personNameContainer {
@@ -44,7 +49,7 @@
   justify-self: center;
   align-items: center;
   gap: 8px;
-  opacity: 0;
+  position: absolute;
 }
 
 .personNameContainer > a {
@@ -64,7 +69,8 @@
   overflow: hidden;
   border: solid 8px white;
   outline: solid 2px black;
-  opacity: 0;
+  position: absolute;
+  top: 0;
 }
 
 .personImageContainer > img {

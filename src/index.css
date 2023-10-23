@@ -28,3 +28,16 @@ button:active {
   background-color: #07a5cc;
   box-shadow: none;
 }
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 32px;
+  padding: 32px;
+}
+
+.row-title {
+  padding: 24px 0px;
+  text-align: center;
+  font-size: 3rem;
+}
