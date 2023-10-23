@@ -1,8 +1,11 @@
 import React from "react";
 import AboutRow from "../components/home/aboutRow/AboutRow";
 import Hero from "../components/home/Hero";
+import { useOutletContext } from "react-router-dom";
 
-function Home() {
+function Home(props) {
+  const { navbar } = useOutletContext();
+
   return (
     <div>
       <Hero
@@ -10,6 +13,8 @@ function Home() {
         title="Manikant Jha"
         subtitle="Full-Stack Developer"
       />
+      {navbar}
+      <AboutRow />
       <AboutRow />
     </div>
   );
