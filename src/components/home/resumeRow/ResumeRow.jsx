@@ -1,5 +1,6 @@
 import React from "react";
 import Card from "../../common/Card";
+import Skills from "./Skills";
 
 function ResumeRow() {
   return (
@@ -8,7 +9,7 @@ function ResumeRow() {
       <div className="row">
         <Card title="Education" />
         <Card title="Experience" />
-        <Card title="Skills" />
+        <Card title="Skills" content={<Skills />} />
       </div>
     </div>
   );

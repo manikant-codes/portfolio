@@ -20,13 +20,13 @@ function Navbar() {
   }, []);
 
   return (
-    <nav className={`${styles.navbar}`}>
-      <div className={`${styles.linksLeft}`}>
+    <nav className={`${styles.navbar} navbarContainer`}>
+      <div className={`${styles.linksLeft} navItems`}>
         <Link to="/">Home</Link>
         <Link to="/about">About</Link>
         <Link to="/resume">Resume</Link>
       </div>
-      <div className={`${styles.personInfoContainer}`}>
+      <div className={`${styles.personInfoContainer} navPersonInfoContainer`}>
         <NavbarName
           animationClassName={scroll > 550 ? styles.fadeIn : styles.fadeOut}
         />
@@ -34,7 +34,7 @@ function Navbar() {
           animationClassName={scroll < 550 ? styles.fadeIn : styles.fadeOut}
         />
       </div>
-      <div className={`${styles.linksRight}`}>
+      <div className={`${styles.linksRight} navItems`}>
         <Link to="/portfolio">Portfolio</Link>
         <Link to="/blog">Blog</Link>
         <Link to="/contact">Contact</Link>
