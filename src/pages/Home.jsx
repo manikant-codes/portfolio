@@ -3,6 +3,8 @@ import AboutRow from "../components/home/aboutRow/AboutRow";
 import Hero from "../components/home/Hero";
 import { useOutletContext } from "react-router-dom";
 import ResumeRow from "../components/home/resumeRow/ResumeRow";
+import FiguresRow from "../components/home/figuresRow/FiguresRow";
+import PortfolioRow from "../components/home/portfolioRow/PortfolioRow";
 
 function Home(props) {
   const { navbar } = useOutletContext();
@@ -17,6 +19,8 @@ function Home(props) {
       {navbar}
       <AboutRow />
       <ResumeRow />
+      <FiguresRow />
+      <PortfolioRow />
     </div>
   );
 }
